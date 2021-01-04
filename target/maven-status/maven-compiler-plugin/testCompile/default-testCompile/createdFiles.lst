@@ -1,0 +1,8 @@
+nopCommerce_Cucumber\nopCommerce_Cucumber\AppTest.class
+stepDefinations\Steps.class
+stepDefinations\BaseClass.class
+pageObjects\LoginPage.class
+TestRunner\TestRun.class
+pageObjects\SearchCustomerPage.class
+utilities\WaitHelper.class
+pageObjects\AddCustomerPage.class
