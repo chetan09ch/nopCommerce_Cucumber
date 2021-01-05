@@ -30,7 +30,7 @@ public WebDriver ldriver;
     
     By txtDOB = By.xpath("//input[@id='DateOfBirth']");
     
-    By txtCompanyName = By.xpath("input[@id='Company']");
+    By txtCompanyName = By.xpath("//input[@id='Company']");
     
     By txtCustomerRoles = By.xpath("//div[@class='k-multiselect-wrap k-floatwrap']");
     
@@ -42,11 +42,12 @@ public WebDriver ldriver;
     By lstItemGuests = By.xpath("//li[contains(text(),'Guests')]");
     By lstItemVendors = By.xpath("//li[[contains(text(),'Vendors')]");
     
+    
     By drpMgrOfVendor = By.xpath("//*[@id='VendorId']");
     
     By txtAdminContent = By.xpath("//textarea[@id='AdminComment']");
     
-    By btnSave = By.xpath("button[@name='save']");
+    By btnSave = By.xpath("//button[@name='save']");
     
     // Action Methods
     
@@ -82,30 +83,9 @@ public WebDriver ldriver;
     	ldriver.findElement(txtLastName).sendKeys(lastname);
     }
     
-    public void setGender(String gender) {
-    	
-    	if (gender.equals("Male")) {
-    		ldriver.findElement(rdMaleGender).click();
-    	}
-    	else if (gender.equals("Female")) {
-    		ldriver.findElement(rdFemaleGender).click();
-    	}
-    	else  {
-    		ldriver.findElement(rdMaleGender).click();//Default
-    	}
-    }
-    
-    public void setDob(String dob) {
-    	ldriver.findElement(txtDOB).sendKeys(dob);
-    }
-    
-    public void setCompanyName(String comname) {
-    	ldriver.findElement(txtCompanyName).sendKeys(comname);
-    }
-    
     public void setCustomerRoles(String role) throws InterruptedException {
     	if (!role.equals("Vendors")) {
-    		ldriver.findElement(By.xpath("//*[@id='SelectedCustomerRoleIds_taglist']/li/span[2]")).click();;
+    		ldriver.findElement(By.xpath("//*[@id='SelectedCustomerRoleIds_taglist']/li/span[2]")).click();
     	}
     		
     	//ldriver.findElement(txtCustomerRoles).click();
@@ -135,7 +115,29 @@ public WebDriver ldriver;
     	JavascriptExecutor js = (JavascriptExecutor)ldriver;
     	js.executeScript("arguments[0].click();", listItem);
     }
-   
+    
+    public void setGender(String gender) {
+    	
+    	if (gender.equals("Male")) {
+    		ldriver.findElement(rdMaleGender).click();
+    	}
+    	else if (gender.equals("Female")) {
+    		ldriver.findElement(rdFemaleGender).click();
+    	}
+    	else  {
+    		ldriver.findElement(rdMaleGender).click();//Default
+    	}
+    }
+    
+    public void setDob(String dob) {
+    	ldriver.findElement(txtDOB).sendKeys(dob);
+    }
+    
+    public void setCompanyName(String comname) {
+    	ldriver.findElement(txtCompanyName).sendKeys(comname);
+    }
+    
+    
     public void setManagerOfVendar(String value) {
     	
     	Select drp=new Select(ldriver.findElement(drpMgrOfVendor));
