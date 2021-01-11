@@ -68,8 +68,10 @@ public class Steps extends BaseClass {
 	@When("User Opens URL {string}")
 	public void user_Opens_URL(String url) {
 		logger.info("********* Opening URL ************");
-	    driver.get(url);
+		driver.get("https://admin-demo.nopcommerce.com/");
 	    driver.manage().window().maximize();
+	    
+	   
 	}
 
 	@When("User enter Email as {string} and Password as {string}")

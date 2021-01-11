@@ -93,9 +93,10 @@ public WebDriver ldriver;
 	}
 	
 	public boolean searchCustomerByEmail(String email) {
+		
 		boolean flag=false;
 		
-		for (int i=1 ; i<getNoOfRows(); i++) {
+		for (int i=1 ; i<=getNoOfRows(); i++) {
 			
 			String emailid = table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr["+i+"]/td[2]")).getText();
 			
@@ -112,7 +113,7 @@ public WebDriver ldriver;
 	public boolean searchCustomerByName(String Name) {
 		boolean flag=false;
 		
-		for (int i=1 ; i<getNoOfRows(); i++) {
+		for (int i=1 ; i<=getNoOfRows(); i++) {
 			
 			String name = table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr["+i+"]/td[3]")).getText();
 			

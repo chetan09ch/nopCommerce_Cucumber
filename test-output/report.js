@@ -23,15 +23,14 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Opens URL \"https://admin-demo.nopcommerce.com/login\"",
+  "name": "User Opens URL \"https://admin-demo.nopcommerce.com/\"",
   "keyword": "When "
 });
 formatter.match({
   "location": "Steps.user_Opens_URL(String)"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinations.Steps.user_Opens_URL(Steps.java:71)\r\n\tat ✽.User Opens URL \"https://admin-demo.nopcommerce.com/login\"(file:Features/Customers.feature:5)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User enter Email as \"admin@yourstore.com\" and Password as \"admin\"",
@@ -41,7 +40,7 @@ formatter.match({
   "location": "Steps.user_enter_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Login",
@@ -51,7 +50,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User can view Dashboard",
@@ -61,7 +60,7 @@ formatter.match({
   "location": "Steps.user_can_view_Dashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add a new Customer",
@@ -76,7 +75,7 @@ formatter.match({
   "location": "Steps.user_click_on_Customers_Menu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User clcik on Cutomers Menu Item",
@@ -86,7 +85,7 @@ formatter.match({
   "location": "Steps.user_clcik_on_Cutomers_Menu_Item()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Add new button",
@@ -96,7 +95,7 @@ formatter.match({
   "location": "Steps.click_on_Add_new_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User can view Add new Customer Page",
@@ -106,7 +105,7 @@ formatter.match({
   "location": "Steps.user_can_view_Add_new_Customer_Page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User enter Customers Info",
@@ -116,7 +115,7 @@ formatter.match({
   "location": "Steps.user_enter_Customers_Info()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Save button",
@@ -126,7 +125,7 @@ formatter.match({
   "location": "Steps.click_on_Save_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User can view Confirmation message \"The new customer has been added successfully.\"",
@@ -136,7 +135,7 @@ formatter.match({
   "location": "Steps.user_can_view_Confirmation_message(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Close Browser",
@@ -146,7 +145,7 @@ formatter.match({
   "location": "Steps.close_Browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.background({
   "name": "Below are the common steps for every scenario",
@@ -167,15 +166,14 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Opens URL \"https://admin-demo.nopcommerce.com/login\"",
+  "name": "User Opens URL \"https://admin-demo.nopcommerce.com/\"",
   "keyword": "When "
 });
 formatter.match({
   "location": "Steps.user_Opens_URL(String)"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinations.Steps.user_Opens_URL(Steps.java:71)\r\n\tat ✽.User Opens URL \"https://admin-demo.nopcommerce.com/login\"(file:Features/Customers.feature:5)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User enter Email as \"admin@yourstore.com\" and Password as \"admin\"",
@@ -185,7 +183,7 @@ formatter.match({
   "location": "Steps.user_enter_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Login",
@@ -195,7 +193,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User can view Dashboard",
@@ -205,7 +203,7 @@ formatter.match({
   "location": "Steps.user_can_view_Dashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Search Customer by EmailID",
@@ -220,7 +218,7 @@ formatter.match({
   "location": "Steps.user_click_on_Customers_Menu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User clcik on Cutomers Menu Item",
@@ -230,7 +228,7 @@ formatter.match({
   "location": "Steps.user_clcik_on_Cutomers_Menu_Item()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Enter Customer Email",
@@ -240,7 +238,7 @@ formatter.match({
   "location": "Steps.enter_Customer_Email()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -250,7 +248,7 @@ formatter.match({
   "location": "Steps.click_on_Search_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User should found Email in the search table",
@@ -260,7 +258,7 @@ formatter.match({
   "location": "Steps.user_should_found_Email_in_the_search_table()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Close Browser",
@@ -270,7 +268,7 @@ formatter.match({
   "location": "Steps.close_Browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.background({
   "name": "Below are the common steps for every scenario",
@@ -291,15 +289,14 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Opens URL \"https://admin-demo.nopcommerce.com/login\"",
+  "name": "User Opens URL \"https://admin-demo.nopcommerce.com/\"",
   "keyword": "When "
 });
 formatter.match({
   "location": "Steps.user_Opens_URL(String)"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinations.Steps.user_Opens_URL(Steps.java:71)\r\n\tat ✽.User Opens URL \"https://admin-demo.nopcommerce.com/login\"(file:Features/Customers.feature:5)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "User enter Email as \"admin@yourstore.com\" and Password as \"admin\"",
@@ -309,7 +306,7 @@ formatter.match({
   "location": "Steps.user_enter_Email_as_and_Password_as(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Login",
@@ -319,7 +316,7 @@ formatter.match({
   "location": "Steps.click_on_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User can view Dashboard",
@@ -329,7 +326,7 @@ formatter.match({
   "location": "Steps.user_can_view_Dashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Search Customer by Name",
@@ -344,7 +341,7 @@ formatter.match({
   "location": "Steps.user_click_on_Customers_Menu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User clcik on Cutomers Menu Item",
@@ -354,7 +351,7 @@ formatter.match({
   "location": "Steps.user_clcik_on_Cutomers_Menu_Item()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Enter Customer FirstName",
@@ -364,7 +361,7 @@ formatter.match({
   "location": "Steps.enter_Customer_FirstName()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Enter Customer LastName",
@@ -374,7 +371,7 @@ formatter.match({
   "location": "Steps.enter_Customer_LastName()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click on Search Button",
@@ -384,7 +381,7 @@ formatter.match({
   "location": "Steps.click_on_Search_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User should found Name in the search table",
@@ -394,7 +391,7 @@ formatter.match({
   "location": "Steps.user_should_found_Name_in_the_search_table()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Close Browser",
@@ -404,6 +401,6 @@ formatter.match({
   "location": "Steps.close_Browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });
