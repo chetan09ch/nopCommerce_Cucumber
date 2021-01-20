@@ -62,7 +62,7 @@ public class Steps extends BaseClass {
 		
 		lp=new LoginPage(driver);
 		
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@When("User Opens URL {string}")
@@ -85,7 +85,7 @@ public class Steps extends BaseClass {
 	public void click_on_Login() throws InterruptedException {
 		logger.info("********* Started login ************");
 	    lp.clickLogin();
-	    Thread.sleep(3000);
+	    //Thread.sleep(3000);
 	}
 
 	@Then("Page Title should be {string}")
@@ -98,14 +98,14 @@ public class Steps extends BaseClass {
 	    		logger.info("********* Login Failed ************");
 	    		Assert.assertEquals(title, driver.getTitle());
 	    	}
-	    Thread.sleep(3000);
+	    //Thread.sleep(3000);
 	    }
 
 	@When("User Click on Logout link")
 	public void user_Click_on_Logout_link() throws InterruptedException {
 		logger.info("********* Click on Logout link ************");
 	    lp.clickLogout();
-	    Thread.sleep(3000);
+	    //Thread.sleep(3000);
 	}
 
 	@Then("Close Browser")
@@ -124,20 +124,20 @@ public class Steps extends BaseClass {
 
 	@When("User click on Customers Menu")
 	public void user_click_on_Customers_Menu() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		addCust.clickOnCustomerMenu();
 	}
 
 	@When("User clcik on Cutomers Menu Item")
 	public void user_clcik_on_Cutomers_Menu_Item() throws InterruptedException {
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		addCust.clickOnCustomerMenuItem();
 	}
 
 	@When("Click on Add new button")
 	public void click_on_Add_new_button() throws InterruptedException {
 		addCust.clickOnAddNew();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 	}
 
 	@Then("User can view Add new Customer Page")
@@ -166,7 +166,7 @@ public class Steps extends BaseClass {
 	public void click_on_Save_button() throws InterruptedException {
 		logger.info("********* Saving customer data ************");
 		addCust.clickOnSave();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 	}
 
 	@Then("User can view Confirmation message {string}")
@@ -188,7 +188,7 @@ public class Steps extends BaseClass {
 	@When("Click on Search Button")
 	public void click_on_Search_Button() throws InterruptedException {
 		searchCust.clickSearch();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 	    
 	}
 

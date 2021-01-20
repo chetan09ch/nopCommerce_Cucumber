@@ -61,26 +61,26 @@ public WebDriver ldriver;
 	//Action Methods 
 	
 	public void setEmail(String email) {
-		//waithelper.WaitForElement(txtEmail, 30);
+		waithelper.WaitForElement(txtEmail, 30);
 		txtEmail.clear();
 		txtEmail.sendKeys(email);
 	}
 	
 	public void setFirstName(String fname) {
-		//waithelper.WaitForElement(txtFirstName, 30);
+		waithelper.WaitForElement(txtFirstName, 30);
 		txtFirstName.clear();
 		txtFirstName.sendKeys(fname);
 	}
 	
 	public void setLastName(String lname) {
-		//waithelper.WaitForElement(txtLastName, 30);
+		waithelper.WaitForElement(txtLastName, 30);
 		txtLastName.clear();
 		txtLastName.sendKeys(lname);
 	}
 	
 	public void clickSearch() {
 		btnSearch.click();
-		//waithelper.WaitForElement(btnSearch, 30);
+	    waithelper.WaitForElement(btnSearch, 30);
 	}
 	
 	

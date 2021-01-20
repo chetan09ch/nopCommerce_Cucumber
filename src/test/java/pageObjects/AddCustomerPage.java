@@ -7,8 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import utilities.WaitHelper;
+
 public class AddCustomerPage {
 public WebDriver ldriver;
+WaitHelper waithelper;
 	
 	public AddCustomerPage (WebDriver rdriver) {
 		ldriver=rdriver;
@@ -56,10 +59,13 @@ public WebDriver ldriver;
     }
     
     public void clickOnCustomerMenu() {
+    	//waithelper.WaitForElement(lnkCustomers_menu, 5);
     	ldriver.findElement(lnkCustomers_menu).click();
+    	
     }
    
     public void clickOnCustomerMenuItem() {
+    	//waithelper.WaitForElement(lnkCustomers_menuitem, 5);
     	ldriver.findElement(lnkCustomers_menuitem).click();
     }
     
@@ -92,7 +98,7 @@ public WebDriver ldriver;
     	
     	WebElement listItem;
     	
-    	Thread.sleep(3000);
+    	//Thread.sleep(3000);
     	
     	if (role.equals("Administrators")) {
     		listItem=ldriver.findElement(lstItemAdministrators);

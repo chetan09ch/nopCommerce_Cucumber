@@ -6,12 +6,16 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.WaitHelper;
+
 public class LoginPage {
 	public WebDriver ldriver;
+	AddCustomerPage addCust;
 	
 	public LoginPage (WebDriver rdriver) {
 		ldriver=rdriver;
 		PageFactory.initElements(rdriver, this);
+		addCust=new AddCustomerPage(ldriver);
 	}
 	
 	@FindBy(id = "Email")
@@ -44,6 +48,9 @@ public class LoginPage {
 	
 	public void clickLogin() {
 		btnLogin.click();
+		
+		//Thread.sleep(3000);
+
 	}
 	
 	public void clickLogout() {
